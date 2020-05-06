@@ -23,7 +23,10 @@ class Profile(models.Model):
 
 > ## admin.py
 ``` python
+from django.contrib import admin
+from .models import Profile
 
+admin.site.register(Profile)
 ```
 
 > ## views.py
