@@ -99,12 +99,23 @@ urlpatterns = [
 ]
 ```
 
-> ## base.html
+> ## profile_list.html
 ``` python
+<form action="" method="POST">
+    {{ formset.management_form }}
+    {% for form in formset %}
+        {{ form }}<br>
+    {% endfor %}
+    {% csrf_token %}
+    <button type="submit">Search</button>
+</form>
+<hr>
 
-```
-
-> ## post_list.html
-``` python
-
+{% for profile in profile_list %}
+    Name: {{ profile.name }}
+    Salary (K): {{ profile.yearly_income }}
+    Height (cm): {{ profile.height }}
+    Weight (kg): {{ profile.weight }}
+    <hr>
+{% endfor %}
 ```
