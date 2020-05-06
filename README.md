@@ -2,7 +2,7 @@
 
 [referred blog](https://narito.ninja/blog/detail/94/)
 
-![Delete-Confirmation-with-Bulma](Delete-Confirmation-with-Bulma.gif)
+![formset-factory](formset-factory.gif)
 
 > ## models.py
 ``` python
